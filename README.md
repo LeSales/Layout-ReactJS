@@ -8,8 +8,9 @@ In the project directory, you can run:
 
 ## Bibliotecas usadas
 
-@material-ui/core
-@material-ui/icons
+@material-ui/core\
+@material-ui/icons\
+styled components\
 
 
 ### `npm start`
