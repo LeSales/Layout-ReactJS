@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Wrapper } from './App.styles'
 import AppHeader from './AppHeader'
 import LandingImg from './LandingImg'

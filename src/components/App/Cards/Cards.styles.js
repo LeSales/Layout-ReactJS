@@ -28,21 +28,25 @@ export const CardTitle = styled.h2`
 `
 export const CardText = styled.p`
     font-size: 1.7rem; 
-    font-weight: 400; 
+    font-weight: 400;
+    height:9rem; 
+    max-width:100%;
     margin-top: 5%; 
-    padding: 0px 30px; 
+    padding: 0px 30px;
+    margin-bottom:5%; 
     text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow:hidden;
+    overflow-wrap:break-word;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 `
 
 export const CardButton = styled.a`
+    border:none;
+    cursor: pointer;
     display: inline-block;
     text-align: center;
-    margin-top: 5%;
     padding: 5% 20%;
     border-radius: 5px;
     color: white;

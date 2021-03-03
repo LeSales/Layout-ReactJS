@@ -1,8 +1,9 @@
 import React from 'react'
-import { Wrapper, ServiceBoxTitle, ServiceBoxInfo, ServiceBoxButton} from './ServiceBox.styles'
+import { Wrapper, ServiceBoxTitle, ServiceBoxInfo, ServiceBoxButton, Box} from './ServiceBox.styles'
 
 function ServiceBox() {
     return <Wrapper>
+        <Box>
         <div>
             <ServiceBoxTitle>Some of our top services</ServiceBoxTitle>
             <ServiceBoxInfo>Ut eleifend libero sed neque rhoncus
@@ -12,6 +13,8 @@ function ServiceBox() {
             </ServiceBoxInfo>
         </div>
         <ServiceBoxButton>View More</ServiceBoxButton>
+        </Box>
+        
     </Wrapper>
     
 }
