@@ -5,8 +5,8 @@ import Footer from '../components/App/Footer';
 import LandingImg from '../components/App/LandingImg';
 import ServiceBox from '../components/App/ServiceBox';
 
-function Box1() {
-    return  <h2>Tela Box 1</h2>
+function Box3() {
+    return  <h2>Tela Box 3</h2>
 }
 
-export default Box1;
+export default Box3;
