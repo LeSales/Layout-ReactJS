@@ -18,17 +18,12 @@ function Cards() {
         await restdb
           .get("/boxes")
           .then((response) => {
-            const {
-                box1,
-                box2,
-                box3,
-                box4
-            } = response.data;
-            console.log(response.data);
-            setBox1(box1);
-            setBox2(box2);
-            setBox3(box3);
-            setBox4(box4);
+            //console.log(response.data);
+            setBox1(response.data[0]);
+            setBox2(response.data[1]);
+            setBox3(response.data[2]);
+            setBox4(response.data[3]);
+            console.log(box1);
           })
           .catch((error) => {
             console.log(error)
@@ -39,47 +34,37 @@ function Cards() {
         getInfo();
       }, []);
 
+      function goPage (page) {
+        console.log("/"+page);
+      }
+
     return <Wrapper>
         <CardInfo>
         <ThumbUpAltIcon style={{fontSize:100, color: "#E95048"}}></ThumbUpAltIcon>
-        <CardTitle></CardTitle>
-        <CardText>
-            Qui QuiQuiQuiQui Qui QuiQuiQui Qui QuiQuiQui Qui Qui QuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQuiQui
-        </CardText>
-        <CardButton onClick={() => {console.log("click!!!")}} style={{backgroundColor:"#E95048",boxShadow:"0px 3px 0px 0px #81010184"}}>read more</CardButton>
+        <CardTitle>{box1.title}</CardTitle>
+        <CardText>{box1.introduction}</CardText>
+        <CardButton onClick={() => goPage(box1.path)} style={{backgroundColor:"#E95048",boxShadow:"0px 3px 0px 0px #81010184"}}>read more</CardButton>
         </CardInfo>
 
         <CardInfo>
             <VpnKeyIcon style={{fontSize:100, color:"#60C2C1"}}></VpnKeyIcon>
-        <CardTitle>MAECENAS</CardTitle>
-        <CardText>
-            Quisque id tellus quis risus vehicula
-            vehicula ut turpis. In eros nulla, placerat
-            vitae at, vehicula ut nunc.
-        </CardText>
-        <CardButton>read more</CardButton>
+        <CardTitle>{box2.title}</CardTitle>
+        <CardText>{box2.introduction}</CardText>
+        <CardButton onClick={() => goPage(box2.path)}>read more</CardButton>
         </CardInfo>
 
         <CardInfo>
         <FlagIcon style={{fontSize:100, color:"#60C2C1"}}></FlagIcon>
-        <CardTitle>ALIQUAM</CardTitle>
-        <CardText>
-            Quisque id tellus quis risus vehicula
-            vehicula ut turpis. In eros nulla, placerat
-            vitae at, vehicula ut nunc.
-        </CardText>
-        <CardButton>read more</CardButton>
+        <CardTitle>{box3.title}</CardTitle>
+        <CardText>{box3.introduction}</CardText>
+        <CardButton onClick={() => goPage(box3.path)}>read more</CardButton>
         </CardInfo>
 
         <CardInfo>
         <VpnKeyIcon style={{fontSize:100, color:"#60C2C1"}}></VpnKeyIcon>
-        <CardTitle>HABITASSE</CardTitle>
-        <CardText>
-            Quisque id tellus quis risus vehicula
-            vehicula ut turpis. In eros nulla, placerat
-            vitae at, vehicula ut nunc.
-        </CardText>
-        <CardButton>read more</CardButton>
+        <CardTitle>{box4.title}</CardTitle>
+        <CardText>{box4.introduction}</CardText>
+        <CardButton onClick={() => goPage(box4.path)}>read more</CardButton>
         </CardInfo>
     </Wrapper>
 }

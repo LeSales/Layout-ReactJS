@@ -1,15 +1,15 @@
 import React from 'react';
-import { Vestibulum, LandingImgInfo, Wrapper} from './LandingImg.styles'
+import {Wrapper} from './LandingImg.styles'
 
 function LandingImg() {
     return <Wrapper>
-        <Vestibulum>
+        <div className="vestibulum">
             Vestibulum
-        </Vestibulum>
-        <LandingImgInfo>
+        </div>
+        <div className="vestibulum--Info">
             Maecenas tincidunt, augue et rutrum condimentum, libero lectus
             mattis orci, ut commodo.
-        </LandingImgInfo>
+        </div>
     </Wrapper>
     
 }
