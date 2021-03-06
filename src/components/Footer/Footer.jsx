@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, Text} from './Footer.styles'
+import { Wrapper, Text } from './Footer.styles'
 
 function Footer() {
     return <Wrapper>

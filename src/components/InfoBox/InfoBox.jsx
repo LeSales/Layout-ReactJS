@@ -2,7 +2,7 @@ import React from 'react';
 import { Wrapper } from './InfoBox.styles';
 
 
-function InfoBox({title, introduction, content}) {
+function InfoBox({ title, introduction, content }) {
     return <Wrapper>
         <div>
             <h2>{title}</h2>

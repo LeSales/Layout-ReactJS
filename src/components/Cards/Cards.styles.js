@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
     max-width: 1080px;
     margin: auto;
     margin-bottom: 10%;
-  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-row-gap: 50px;
@@ -59,6 +58,6 @@ export const CardButton = styled.a`
 `
 
 export const linkStyle = {
-    color:"#FFF",
+    color: "#FFF",
     textDecoration: 'none'
 };

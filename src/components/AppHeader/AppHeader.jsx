@@ -7,7 +7,7 @@ function AppHeader() {
     return <Wrapper>
         <Head>
             <Logo>MODUSversus</Logo>
-            <Sandwich/>
+            <Sandwich />
         </Head>
     </Wrapper>
 }

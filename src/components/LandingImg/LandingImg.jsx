@@ -1,5 +1,5 @@
 import React from 'react';
-import {Wrapper} from './LandingImg.styles'
+import { Wrapper } from './LandingImg.styles'
 
 function LandingImg() {
     return <Wrapper>
@@ -11,7 +11,6 @@ function LandingImg() {
             mattis orci, ut commodo.
         </div>
     </Wrapper>
-    
 }
 
 export default LandingImg;

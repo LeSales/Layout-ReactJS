@@ -4,12 +4,14 @@ export const Wrapper = styled.div`
     width:100vw;
     height:30vh;
     display:flex;
+    padding:20px;
     justify-content:center;
     align-items:center;
 
     div {
-        width:50vw;
+        width:70vw;
         max-width:720px;
+        min-width:300px;
         height:20vh;
         display:flex;
         align-items:center;
@@ -36,7 +38,7 @@ export const Wrapper = styled.div`
     p {
         font-size: 2rem;
         font-weight: 400;
-        padding-bottom: 2%;
+        padding:0 20px;
         color: #707070;
     }
 `;

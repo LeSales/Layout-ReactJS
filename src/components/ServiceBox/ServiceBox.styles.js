@@ -54,10 +54,8 @@ export const Box = styled.div`
         max-width: 700px;
         padding: 5%;
 
-    p {
-        padding-bottom: 5%;
+        p {
+            padding-bottom: 5%;
+        }
     }
-
-}
-
 `

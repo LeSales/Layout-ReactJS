@@ -1,10 +1,7 @@
 import React from 'react';
-import {Wrapper} from './SkeletonLoading.styles'
+import { Wrapper } from './SkeletonLoading.styles'
 
 function SkeletonInfoLoading({ type }) {
-
-    const classes = `skeleton ${type}`;
-
     return <Wrapper>
         <div className="box">
             <div className="title"></div>
@@ -15,7 +12,6 @@ function SkeletonInfoLoading({ type }) {
             <div className="content3"></div>
         </div>
     </Wrapper>
-    
 }
 
 export default SkeletonInfoLoading;

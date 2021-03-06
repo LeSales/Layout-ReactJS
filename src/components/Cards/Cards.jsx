@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { CardButton, CardInfo, CardText, CardTitle, Wrapper, linkStyle } from './Cards.styles';
-
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import FlagIcon from '@material-ui/icons/Flag';
-
 import { restdb } from '../../utils/api';
-
 import { Link } from 'react-router-dom';
 import SkeletonCardLoading from '../SkeletonLoading'
 
@@ -21,10 +18,12 @@ function Cards() {
     await restdb
       .get("/boxes")
       .then((response) => {
+        //const res = response.json();
         setBox1(response.data[0]);
         setBox2(response.data[1]);
         setBox3(response.data[2]);
         setBox4(response.data[3]);
+        console.log(response.data);
       })
       .catch((error) => {
         console.log(error)
@@ -85,7 +84,7 @@ function Cards() {
 
       {!box3 && (
         <>
-          <SkeletonCardLoading/>
+          <SkeletonCardLoading />
         </>
       )}
       <CardButton>

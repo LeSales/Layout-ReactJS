@@ -6,13 +6,13 @@ import ServiceBox from '../ServiceBox';
 import Cards from '../Cards';
 import Footer from '../Footer';
 
-function App () {
+function App() {
     return <Wrapper>
-        <AppHeader/>
-        <LandingImg/>     
-        <ServiceBox/>
-        <Cards/>
-        <Footer/>   
+        <AppHeader />
+        <LandingImg />
+        <ServiceBox />
+        <Cards />
+        <Footer />
     </Wrapper>
 }
 
