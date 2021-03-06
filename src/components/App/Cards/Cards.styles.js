@@ -56,3 +56,8 @@ export const CardButton = styled.a`
     box-shadow: 0px 3px 0px 0px #60C2C184;
     text-decoration: none;
 `
+
+export const linkStyle = {
+    color:"#FFF",
+    textDecoration: 'none'
+};

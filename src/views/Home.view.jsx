@@ -1,5 +1,4 @@
 import React from 'react'
-import App from '../components/App';
 
 import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import Home from '../components/App/App';
@@ -11,13 +10,13 @@ import Box4 from './Box4.view';
 function HomeView() {
     return (
         <Router>
-            
+            <Switch>
                 <Route path="/" exact component={Home}/>
                 <Route path="/box1" component={Box1}/>
                 <Route path="/box2" component={Box2}/>
                 <Route path="/box3" component={Box3}/>
                 <Route path="/box4" component={Box4}/>
-          
+            </Switch>
         </Router>
     )
 }

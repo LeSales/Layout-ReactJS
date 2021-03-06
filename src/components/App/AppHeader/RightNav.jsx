@@ -1,23 +1,24 @@
 import React from 'react';
 import {Menu, MenuItem} from './AppHeader.styles'
 import SearchIcon from '@material-ui/icons/Search';
+import {Link} from 'react-router-dom';
 
 function RightNav  ({open}) {
 
     return <Menu open={open}>
     <MenuItem>
-        <a href="#">HOME</a>
+    <Link to="/">HOME</Link>
     </MenuItem>
     <MenuItem>
-        <a href="#">ABOUT</a>
+        <a>ABOUT</a>
     </MenuItem>
     <MenuItem>
         <a>SERVICES</a>
         <ul>
         <div>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link3</a></li>
+            <li><a>Link1</a></li>
+            <li><a>Link2</a></li>
+            <li><a>Link3</a></li>
         </div>
     </ul>
     </MenuItem>
@@ -25,9 +26,9 @@ function RightNav  ({open}) {
         <a>PORTFOLIO</a>
         <ul>
         <div>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link3</a></li>
+            <li><a>Link1</a></li>
+            <li><a>Link2</a></li>
+            <li><a>Link3</a></li>
         </div>
     </ul>
     </MenuItem>
@@ -38,9 +39,9 @@ function RightNav  ({open}) {
         <a>FEATURES</a>
         <ul>
         <div>
-            <li><a href="#">Link1</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link3</a></li>
+            <li><a>Link1</a></li>
+            <li><a>Link2</a></li>
+            <li><a>Link3</a></li>
         </div>
     </ul>
     </MenuItem>
