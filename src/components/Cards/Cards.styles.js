@@ -15,6 +15,7 @@ export const CardInfo = styled.div`
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease 0s;
+    min-height:314px;
     color: #707070;
     align-items: center;
     justify-content: space-between;

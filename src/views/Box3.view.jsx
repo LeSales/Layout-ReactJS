@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { Wrapper } from '../components/App/App.styles';
-import AppHeader from '../components/App/AppHeader';
-import Footer from '../components/App/Footer';
-import LandingImg from '../components/App/LandingImg';
-import ServiceBox from '../components/App/ServiceBox';
+import AppHeader from '../components/AppHeader';
+import Footer from '../components/Footer';
+import LandingImg from '../components/LandingImg';
+import ServiceBox from '../components/ServiceBox';
 import InfoBox from '../components/InfoBox/InfoBox';
 import {restdb} from '../utils/api';
 
