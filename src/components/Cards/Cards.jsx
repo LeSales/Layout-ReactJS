@@ -9,22 +9,23 @@ import SkeletonCardLoading from '../SkeletonLoading'
 
 
 function Cards() {
-  const [box1, setBox1] = useState("");
-  const [box2, setBox2] = useState("");
-  const [box3, setBox3] = useState("");
-  const [box4, setBox4] = useState("");
+  const [box1, setBox1] = useState([]);
+  const [box2, setBox2] = useState([]);
+  const [box3, setBox3] = useState([]);
+  const [box4, setBox4] = useState([]);
 
   async function getInfo() {
     await restdb
       .get("/boxes")
       .then((response) => {
-        //const res = response.json();
+        
         setBox1(response.data[0]);
-        setBox2(response.data[1]);
-        setBox3(response.data[2]);
-        setBox4(response.data[3]);
-        console.log(response.data);
-      })
+        setBox2(response.data[2]);
+        setBox3(response.data[3]);
+        setBox4(response.data[1]);
+      }
+        
+      )
       .catch((error) => {
         console.log(error)
       });
