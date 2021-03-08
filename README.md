@@ -1,6 +1,6 @@
 # Desafio CSP
 
-O desafio consiste na criação de um layout estático se atendo aos padrões de responsividade com HTML e CSS (https://github.com/LeSales/Desafio-CSP/tree/master)\
+O desafio consiste na criação de um layout estático se atendo aos padrões de responsividade com HTML e CSS https://github.com/LeSales/Desafio-CSP/tree/master \
 E nesse mesmo layout sendo decomposto em componentes, utilizando ReactJs.\
 A estilização foi feita com styled components.\
 Para os ícones foi utilizado material-ui.\
