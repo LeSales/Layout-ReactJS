@@ -73,41 +73,44 @@ export const Wrapper = styled.div`
 
         .title {
             width:40vw;
+            max-width:600px;
             height:25px;
             margin-bottom: 10px;
         }
 
         .introduction1 {
             width:35vw;
+            max-width:620px;
             height:20px;
             margin:5px 0;
         }
 
         .introduction2 {
             width:30vw;
+            max-width:580px;
             height:20px;
             margin:5px 0;
         }
 
         .content1 {
             width:38vw;
+            max-width:650px;
             height:10px;
             margin:5px 0;
         }
 
         .content2 {
             width:40vw;
+            max-width:670px;
             height:10px;
             margin:5px 0;
         }
 
         .content3 {
             width:30vw;
+            max-width:520px;
             height:10px;
             margin:5px 0;
         }
 
 `
-
-
-
