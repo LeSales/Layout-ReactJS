@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
     background-color: #76C7C1;
     width: 100%;
     font-size:62.5%;
+    position:fixed;
 `
 
 export const Head = styled.div`
@@ -54,7 +55,7 @@ export const Menu = styled.ul`
         top:0;
         right:0;
         height:100vh;
-        width:100vw;
+        width:60vw;
         justify-content:center;
         align-items:center;
         transition: transform 0.3s ease-in-out;

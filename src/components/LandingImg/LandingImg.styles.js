@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 50vh;
-    background: rgba(0,0,0,0.1) url('https://super.abril.com.br/wp-content/uploads/2018/09/cidade.png?quality=70&strip=info&resize=680,453') no-repeat;
+    background: rgba(0,0,0,0.1) url('https://www.stx.ox.ac.uk/sites/default/files/stx/images/media/gettyimages-538096543_medium.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
