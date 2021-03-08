@@ -15,6 +15,14 @@ export const CardWrapper = styled.div`
     border-radius:4px;
     }
 
+    .icon {
+        width:10rem;
+        height:10rem;
+        margin-bottom:8rem;
+        background-color: #ddd;
+        border-radius:50%;
+    }
+
     .title {
         width:200px;
         height:20px;

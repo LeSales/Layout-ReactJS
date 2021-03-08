@@ -3,6 +3,7 @@ import { CardWrapper } from './SkeletonLoading.styles'
 
 function SkeletonCardLoading() {
     return <CardWrapper>
+        <div className="icon"></div>
         <div className="title"></div>
         <div className="introduction1"></div>
         <div className="introduction2"></div>

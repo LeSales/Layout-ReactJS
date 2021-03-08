@@ -16,12 +16,15 @@ import SkeletonCardLoading from "../SkeletonLoading";
 
 function Cards() {
   const [boxs, setBoxs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   async function getInfo() {
+
     await restdb
       .get("/boxes")
       .then((response) => {
         setBoxs(response.data);
+        setLoading(!loading);
       })
       .catch((error) => {
         console.log(error);
@@ -32,8 +35,9 @@ function Cards() {
     getInfo();
   }, []);
 
+
   let listaBoxes = boxs.map((box) => (
-    <CardInfo key={box.path}>
+      <CardInfo key={box.path}>
       {box.path === "/box1" ? (
         <ThumbUpAltIcon
           style={{
@@ -55,14 +59,10 @@ function Cards() {
         <VpnKeyIcon style={{ fontSize: 100, color: "#60C2C1" }}></VpnKeyIcon>
       ) : null}
 
-      {box ===[] ? (
-        <SkeletonCardLoading />
-      ) : (
-        <>
-          <CardTitle>{box.title}</CardTitle>
-          <CardText>{box.introduction}</CardText>
-        </>
-      )}
+      <CardTitle>{box.title}</CardTitle>
+      <CardText>{box.introduction}</CardText>
+
+      
 
       <CardButton
         style={{
@@ -70,7 +70,7 @@ function Cards() {
           boxShadow:
             box.path === "/box1"
               ? "0px 3px 0px 0px #81010184"
-              : "0px 3px 0px 0px #60C2C1",
+              : "0px 3px 0px 0px #60C2C184",
         }}
       >
         <Link to={box.path} style={linkStyle}>
@@ -80,7 +80,16 @@ function Cards() {
     </CardInfo>
   ));
 
-  return <Wrapper>{listaBoxes}</Wrapper>;
+  return <Wrapper>
+    {loading ? (<>
+      <SkeletonCardLoading/>
+      <SkeletonCardLoading/>
+      <SkeletonCardLoading/>
+      <SkeletonCardLoading/>
+      </>
+    ) : (listaBoxes)}
+    
+    </Wrapper>;
 }
 
 export default Cards;
